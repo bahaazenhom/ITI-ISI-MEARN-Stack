@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Payment Form</h1>
+        <p>Required Fields are followed by ..*</p>
+
+        <h2>Contact Form</h2>
+        <form action="post" id="contact-form">
+        <fieldset style="width: 200px;" id="title-container">
+            <legend>Title</legend>
+            <label for="mister">Mister</label>
+            <input type="radio" name="title" id="mister" value="Mister">
+            <label for="miss" >Miss</label>
+            <input type="radio" name="title" id="miss" value="Miss">
+        </fieldset>
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div class="input-group">
+            <label for="card">Card Type</label>
+            <select name="cards" id="card-type">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="amex">American Express</option>
+            </select>
+        </div>
+        <input type="button" name="add-user" id="save-button" value="Add User">
+        </form>
+        <div id="search-container">
+            <label for="search">Search: </label>
+            <input type="text" name="search" id="search-text">
+        </div>
+        <div id="users-list">
+            <h2>List of Users</h2>
+            <table id="users-table">
+                <thead id="users-table-head">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Card</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tbody id="users-table-body">
+                    </tbody>
+                    <tfoot id="users-table-foot">
+                    
+                    </tfoot>
+                </thead>
+            </table>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

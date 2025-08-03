@@ -1,0 +1,116 @@
+/* Ex1: ------------------------------------------------------------------------------- */
+body {
+    background-color: #c8dcc9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#loginForm {
+    width: 300px;
+    height: 200px;
+    background-color: #9ed2a0;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+
+}
+
+#form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+}
+
+#loginButton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#loginButton:hover {
+    background-color: #45a049;
+}
+#message{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Ex2: ------------------------------------------------------------------------------- */
+#todoform{
+    background-color: #84ce87;
+    width: 300px;
+    height: 75px;
+    padding: 10px;
+    border-radius: 7px;
+    color:white;
+    margin: 0 auto;
+}
+#todoform input {
+    width: 85%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#todoform button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#todoform button:hover {
+    background-color: #45a049;
+}
+
+#todoList { 
+    width: 300px;
+    margin: 20px auto;
+    background-color: #d4f0d4;
+    border-radius: 5px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ffffff;
+}
+.todo-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.check-button{
+    margin-left: auto;
+    margin-right: 5px;
+}
+.todo-item button {
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    height: 25px;
+}
+.todo-item button:hover {
+    background-color: #f0f0f0;
+}
+
+.todo-item.completed {
+    background-color: rgb(186, 249, 186);
+}
