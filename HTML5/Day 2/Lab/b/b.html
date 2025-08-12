@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="package">
+        <div id="video-manag">
+            <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" controls width="400px" height="300px"></video>
+            <div id="controls">
+                <button id="playPuase" class="level-one">
+                    <img src="play-button-arrowhead.png" width="10px" height="15px">
+                </button>
+                <button id="muteUnmute" class="level-two">
+                    <img src="volume-up.png" width="15px" height="15px">
+                </button>
+                <input type="range" value = 100 id="volume" min="0" max="100" class="level-two">
+                <input  type = range id="vid-progress" value="0" min="0" max="100"></input>
+            </div>
+        </div>
+        <div id="playList">
+                <ul id="list">
+                </ul> 
+            </div>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <input type="button" value="Get Location" id="getLocation" onclick="getLocation()">
+    <script>
+        function getLocation() {
+   navigator.geolocation.getCurrentPosition(
+                function(position) {
+                  var lat = position.coords.latitude;
+                  var lon = position.coords.longitude;
+                  var url = `https://www.google.com/maps?q=${lat},${lon}`;
+                  window.open(url, '_blank');
+
+                  console.log("Latitude: " + lat);
+                  console.log("Longitude: " + lon);
+                },
+                function(error) {
+                    console.error("Error");
+                }
+            );
+}
+    </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+         <p id="p1" hi="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, facilis laboriosam illo consequatur alias quod cumque ducimus. Voluptatibus, quasi provident? Amet id perspiciatis consequatur doloremque expedita ex excepturi perferendis alias!</p>
+         <p id="p2">lit. Iste, facilis laboriosam illo consequatur alias quod cumque ducimus. Voluptatibus, quasi provident? Amet id perspiciatis consequatur doloremque expedita ex excepturi perferendis alias!</p>
+         <input type="text" id="p3" value="test input">
+         <input type="text" id="p4" value="test input 2">
+         <p>p1</p>
+         <p>p2</p>
+         <p>p3</p>
+         <div id="hi">
+            <p>testing</p>
+         </div>
+        </body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+       $("#p1").text("test");
+      console.log($("#p2").attr("test","p3"));
+      $("#p3").val("new value");
+      $("input").each(function() {
+          console.log("val :"+ $(this).val());
+      });
+      console.log($("#p3").is("#p5"));
+      ;
+      $("#hi").append("<p>new paragraph</p>");
+      var arr= ["red", "green", "blue", "yellow"];
+      $("p").each(function(i, ele) {
+          $(ele).css("color", arr[(i++)%arr.length]);
+      });
+      </script>
+</html>

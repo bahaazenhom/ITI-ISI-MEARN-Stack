@@ -1,0 +1,50 @@
+#video-manag {
+    width: 405px;
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+}
+#controls{
+    display: flex;
+    margin-top: 10px;
+    display: block;
+}
+.level-one,.level-two {
+    margin-left: 5px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.level-one,.level-two {
+    margin: 5px;
+    justify-content: center;
+
+}
+#muteUnmute {
+    margin-left: 180px;
+}
+#vid-progress {
+    margin-left: 5px;
+    width: 98%;
+    display: block;
+}
+#playList {
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 350px;
+    height: 350px;
+    overflow-y: scroll;
+    border: 1px solid #000000;
+    display: inline-block;
+    vertical-align: top;
+}
+#package {
+    display: inline-block;
+    width: 800px;
+    justify-content: center;
+}
+video {
+    display: inline-block;
+}
+

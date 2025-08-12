@@ -1,0 +1,84 @@
+<html>
+    <head> 
+          <style>
+                    .ul-parent {
+                        background-color: yellow;
+                    }
+                </style>
+    </head>
+    <body>
+        <div>
+            <ul id="test">
+                <li>i1</li>
+                <li class="two">l2</li>
+                <li>i3</li>
+                <li>l4</li>
+            </ul>
+            
+            <div>
+                <a href="test">test</a>
+                <p>this is p</p>
+            </div>
+        </div>
+        <hr>
+        <div id="div2">fds</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            console.log(
+                $("ul").addClass("ul-parent"));
+                $("div").addClass("ul-parent");
+                $("ul").filter(".ul-parent").css("background-color", "red");
+                $("div").prepend("<p>this is a new paragraph</p>");
+                $("ul").append("<li>new item</li>");
+                $("ul").appendTo("div");
+              //  $("#div2").replaceWith("<p>testttttttt</p>");
+                $("li").eq(2).css("color", "white");
+                $("li").not(".two").css("color", "white");
+                var div = $("div");
+                div.click(function() {
+                    $(this).css("background-color", "blue");
+                });
+
+                // div.hover(
+                //     function() {
+                //         $(this).css("background-color", "green");
+                //     },
+                //     function() {
+                //         $(this).css("background-color", "white");
+                //     }
+                // );
+
+                div.on({
+                    mouseenter: function() {
+                        $(this).css("background-color", "green");
+                    },
+                    mouseleave: function() {
+                        $(this).css("background-color", "white");
+                    },
+                    click: function() {
+                        $(this).css("background-color", "blue");
+                    }
+                })
+                div.on("click",{userid:500}, function(event) {
+                    console.log("User ID: " + event.data.userid);
+                });
+                $.ajax({
+                    url: "https://jsonplaceholder.typicode.com/posts",
+                    method: "GET",
+                    
+                    success: function(data) {
+                        console.log(data);
+                        data.forEach(function(post) {
+                            $("body").append("<h3>" + post.title + "</h3>");
+                            $("body").append("<p>" + post.body + "</p>");
+                        });
+                    },
+
+                    error: function(error) {
+                        console.error("Error fetching data:", error);
+                    }
+                });
+                </script>
+              
+    </body>
+</html>

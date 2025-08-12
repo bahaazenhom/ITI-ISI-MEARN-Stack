@@ -1,0 +1,11 @@
+#color-range{
+    background-color: #e7eaed;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 4px;
+    margin-top: 6px;
+    height: 160px;
+
+}
